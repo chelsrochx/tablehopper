@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Table Hopper - Who We Are</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		body {
+			background-image: url('pictures/bg2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			//background-color: #566E3D;
+
+		}
+	</style>
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+
+	<!-- <a href='https://www.freepik.com/photos/frame'>Frame photo created by valeria_aksakova - www.freepik.com</a> -->
+
+	<nav class="header">
+		<a href="index.html"><img src="pictures/templogo3.png" width="27%" height="auto" alt="TableHopper"></a>
+    <!--<img src="templogo.png" width="20%" height="auto" alt="Logo" class="center">-->
+  
+		
+  <div id="menu" class="overlay">
+    
+   <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  <div class="overlay-content">
+    <a href="aboutus.html">Who We Are</a>
+    <a href="staffrecs.html">Staff Recommendations</a>
+    <a href="meetus.html">Meet Our Team</a>
+    <a href="contactus.html">Contact Us</a>
+
+  </div>
+</div>
+
+<div id="search" class="search">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()" >&times;</a>
+  <div class="search-content">
+   <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('places')"> Locations</button>
+      <button class="btn" onclick="filterSelection('foods')"> Cuisine</button>
+      <button class="btn" onclick="filterSelection('ratings')"> Ratings</button>
+      <button class="btn" onclick="filterSelection('prices')"> Price Range</button>
+    </div>
+   <!-- Locations>-->
+      <div class="filterDiv places">
+          <div class="btn-group" >
+            <button onclick="filterSelection('place1')"> East</button>
+            <button onclick="filterSelection('place2')"> West</button>
+            <button onclick="filterSelection('place3')"> North</button>
+            <button onclick="filterSelection('place4')"> South</button>
+          </div>  
+      </div>
+      <!--Food-->
+      <div class="filterDiv foods">
+          <div class="btn-group">
+            <button onclick="filterSelection('food1')"> American</button>
+            <button onclick="filterSelection('food2')"> Asian</button>
+            <button onclick="filterSelection('food3')"> Brazilian</button>
+            <button onclick="filterSelection('food4')"> Caribbean</button>
+            <button onclick="filterSelection('food5')"> European</button>
+            <button onclick="filterSelection('food6')"> Grill</button>
+            <button onclick="filterSelection('food7')"> International</button>
+            <button onclick="filterSelection('food8')"> Italian</button>
+            <button onclick="filterSelection('food9')"> Japanese</button>
+          </div>    
+      </div>
+          <!--Rating Options-->
+      <div class="filterDiv ratings">
+          <!--<button class="btn active" onclick="filterSelection('all')"> All</button>-->
+          <div class="btn-group">
+            <button onclick="filterSelection('rate1')"> 5 stars</button>
+            <button onclick="filterSelection('rate2')"> 4 stars</button>
+            <button onclick="filterSelection('rate3')"> 3 stars </button>
+            <button onclick="filterSelection('rate4')"> 2 stars </button>
+          </div>
+      </div>
+          <!--Prices-->
+      <div class="filterDiv prices">
+          <!--<button class="btn active" onclick="filterSelection('all')"> All</button>-->
+          <div class="btn-group">
+            <button onclick="filterSelection('price1')"> $$-$$$</button>
+            <button onclick="filterSelection('price2')"> $$$-$$$$</button>
+          </div>
+      </div>
+
+      <!-----------Locations------------------------>
+      <div class="filterDiv place1">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+
+        </div>
+      </div>
+      <div class="filterDiv place2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv place3">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+      <div class="filterDiv place4">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+        </div>
+      </div>
+       <!-----------Food Options------------------------>
+       <div class="filterDiv food1">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv food2">
+        <div class="btn-group">
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+        </div>
+      </div>
+      <div class="filterDiv food3">
+        <div class="btn-group">
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+        </div>
+      </div>
+      <div class="filterDiv food4">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>      
+      <div class="filterDiv food5">
+        <div class="btn-group">
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+        </div>
+      </div>
+      <div class="filterDiv food6">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv food7">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv food8">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+        </div>
+      </div>
+      <div class="filterDiv food9">
+        <div class="btn-group">
+         <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+        </div>
+      </div>
+       <!-----------Ratings------------------------>
+       <div class="filterDiv rate1">
+        <div class="btn-group">
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv rate2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv rate3">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+      <div class="filterDiv rate4">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+    <!-----------Prices------------------------>
+      <div class="filterDiv price1">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv price2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+   </div>
+  </div>
+
+<div class= "search-right">
+  <span style="font-size:30px;cursor:pointer" onclick="openSearch()">&#9776; filter</span>
+</div>
+<div class= "overlay-right">
+  <span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; menu</span>
+</div>
+</nav>
+
+
+<h2 style="font-size: 2em;padding: 60px;">WHO WE ARE</h2>
+<p class="aboutusbody"> In 2020, our Table Hoppers team saw how greatly the pandemic had affected a lot of people. Created with the general populace in mind, Table Hoppers is an easy restaurant review website, run by a team of young adults. While we may not have experience in the restaurant industry, our main goal is to share our unbiased experiences and return honest reviews so you don’t have to put yourself at risk. Table Hoppers was created for those who love trying new places but weren’t able to do so because of the risks involved. <br><br>
+
+We are not affiliated with any restaurants and our monthly recommendations are based off personal choice in together with opinions and recommendations of others both offline and online. We take a lot of factors into consideration when making our recommendations and we hope that you approve of each of our monthly features!<br><br>
+
+This website is created by people, for people. Feel free to head to our Meet Our Team page if you want to learn more about the individual members, or you can send us a restaurant you’d like us to try or you have questions, you can use our contact page. <br><br>
+
+Let’s get through this pandemic together, and maybe eventually you can also be your own Table Hopper!
+
+</p>
+
+<div class="footer-basic">
+        <footer>
+            <div class="social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="staffrecs.html">Recommendations</a></li>
+                <li class="list-inline-item"><a href="aboutus.html">About</a></li>
+                <li class="list-inline-item"><a href="contactus.html">Contact</a></li>
+                
+            </ul>
+            <p class="copyright">Table Hoppers © 2021</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

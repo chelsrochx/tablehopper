@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<title>Table Hopper - Home</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+	<style>
+		body {
+			background-image: url('pictures/bg2.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			//background-color: #566E3D;
+		}
+    
+	</style>
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+
+	<!-- <a href='https://www.freepik.com/photos/frame'>Frame photo created by valeria_aksakova - www.freepik.com</a> -->
+
+	<nav class="header">
+		<a href="index.html"><img src="pictures/templogo3.png" width="27%" height="auto" alt="TableHopper"></a>
+    <!--<img src="templogo.png" width="20%" height="auto" alt="Logo" class="center">-->
+  
+		
+  <div id="menu" class="overlay">
+    
+   <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+  <div class="overlay-content">
+    <a href="aboutus.html">Who We Are</a>
+    <a href="staffrecs.html">Staff Recommendations</a>
+    <a href="meetus.html">Meet Our Team</a>
+    <a href="contactus.html">Contact Us</a>
+
+  </div>
+</div>
+
+<div id="search" class="search">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()" >&times;</a>
+  <div class="search-content">
+   <div id="myBtnContainer">
+      <button class="btn" onclick="filterSelection('places')"> Locations</button>
+      <button class="btn" onclick="filterSelection('foods')"> Cuisine</button>
+      <button class="btn" onclick="filterSelection('ratings')"> Ratings</button>
+      <button class="btn" onclick="filterSelection('prices')"> Price Range</button>
+    </div>
+   <!-- Locations>-->
+      <div class="filterDiv places">
+          <div class="btn-group" >
+            <button onclick="filterSelection('place1')"> East</button>
+            <button onclick="filterSelection('place2')"> West</button>
+            <button onclick="filterSelection('place3')"> North</button>
+            <button onclick="filterSelection('place4')"> South</button>
+          </div>  
+      </div>
+      <!--Food-->
+      <div class="filterDiv foods">
+          <div class="btn-group">
+            <button onclick="filterSelection('food1')"> American</button>
+            <button onclick="filterSelection('food2')"> Asian</button>
+            <button onclick="filterSelection('food3')"> Brazilian</button>
+            <button onclick="filterSelection('food4')"> Caribbean</button>
+            <button onclick="filterSelection('food5')"> European</button>
+            <button onclick="filterSelection('food6')"> Grill</button>
+            <button onclick="filterSelection('food7')"> International</button>
+            <button onclick="filterSelection('food8')"> Italian</button>
+            <button onclick="filterSelection('food9')"> Japanese</button>
+          </div>    
+      </div>
+          <!--Rating Options-->
+      <div class="filterDiv ratings">
+          <!--<button class="btn active" onclick="filterSelection('all')"> All</button>-->
+          <div class="btn-group">
+            <button onclick="filterSelection('rate1')"> 5 stars</button>
+            <button onclick="filterSelection('rate2')"> 4 stars</button>
+            <button onclick="filterSelection('rate3')"> 3 stars </button>
+            <button onclick="filterSelection('rate4')"> 2 stars </button>
+          </div>
+      </div>
+          <!--Prices-->
+      <div class="filterDiv prices">
+          <!--<button class="btn active" onclick="filterSelection('all')"> All</button>-->
+          <div class="btn-group">
+            <button onclick="filterSelection('price1')"> $$-$$$</button>
+            <button onclick="filterSelection('price2')"> $$$-$$$$</button>
+          </div>
+      </div>
+
+      <!-----------Locations------------------------>
+      <div class="filterDiv place1">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+
+        </div>
+      </div>
+      <div class="filterDiv place2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv place3">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+      <div class="filterDiv place4">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+        </div>
+      </div>
+       <!-----------Food Options------------------------>
+       <div class="filterDiv food1">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv food2">
+        <div class="btn-group">
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+        </div>
+      </div>
+      <div class="filterDiv food3">
+        <div class="btn-group">
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+        </div>
+      </div>
+      <div class="filterDiv food4">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>      
+      <div class="filterDiv food5">
+        <div class="btn-group">
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+        </div>
+      </div>
+      <div class="filterDiv food6">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv food7">
+        <div class="btn-group">
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv food8">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+        </div>
+      </div>
+      <div class="filterDiv food9">
+        <div class="btn-group">
+         <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+        </div>
+      </div>
+       <!-----------Ratings------------------------>
+       <div class="filterDiv rate1">
+        <div class="btn-group">
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv rate2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+      <div class="filterDiv rate3">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+      <div class="filterDiv rate4">
+        <div class="btn-group">
+          <p style= "color: black;">No Restaurants Found :(</p>
+        </div>
+      </div>
+    <!-----------Prices------------------------>
+      <div class="filterDiv price1">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://texasdebrazil.com/">Texas de Brazil</a>
+          <a href="https://www.aiolitrinidad.com/">Aioli</a>
+          <a href="http://www.samuraitt.com/">Samurai Restaurant</a>
+          <a href="https://www.facebook.com/ToppersTT/">Topper's Restaurant & Bar </a>
+        </div>
+      </div>
+      <div class="filterDiv price2">
+        <div class="btn-group">
+          <a href="https://www.facebook.com/rizzonis/">Rizzoni's Ristorante Italiano</a>
+          <a href="https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront">The Waterfront Restaurant and Terrace</a>
+        </div>
+      </div>
+   </div>
+  </div>
+
+  <div class= "search-right">
+    <span style="font-size:30px;cursor:pointer" onclick="openSearch()">&#9776; filter</span>
+  </div>
+  <div class= "overlay-right">
+    <span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776; menu</span>
+  </div>
+  </nav>
+  <br><br>
+
+<div class="revpagebody">
+  <form>
+    <select id="mySelect">
+      <option>Choose a restaurant...</option>
+      
+      <option value="<b>Aioli</b><br><br><b>Location:</b> Port of Spain<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$-$$$$<br><b>Cuisines:</b> Italian, European<br><b>Special Diets:</b> Vegetarian Friendly, Vegan Options, Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=https://www.aiolitrinidad.com/>Aioli's Website</a>">Aioli</option>
+      
+      <option value="<b>Rizzoni's Ristorante Italiano</b><br><br><b>Location:</b> Port of Spain, San Fernando<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$-$$$$<br><b>Cuisine:</b> Italian<br><b>Special Diets:</b> Vegetarian Friendly, Vegan Options, Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=https://www.facebook.com/rizzonis/>Rizzoni's Ristorante Italiano's Website</a>">Rizzoni's Ristorante Italiano</option>
+      
+      <option value="<b>Samurai Restaurant</b><br><br><b>Location:</b> Port of Spain<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$-$$$$<br><b>Cuisines:</b> Japanese, Seafood, Sushi, Asian<br><b>Special Diets:</b> Vegetarian Friendly, Vegan Options, Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=http://www.samuraitt.com/>Samurai Restaurant's Website</a>">Samurai Restaurant</option>
+      
+      <option value="<b>Texas de Brazil</b><br><br><b>Location:</b> Port of Spain<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$-$$$<br><b>Cuisine:</b> Brazilian<br><b>Special Diets:</b> Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=https://texasdebrazil.com>Texas De Brazil's Website</a>">Texas De Brasil</option>
+      
+      <option value="<b>Toppers Restaurant & Bar</b><br><br><b>Location:</b> Grand Bazaar, San Fernando<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$-$$$$<br><b>Cuisine:</b> American<br><br><b>Special Diets:</b> Vegetarian Friendly, Vegan Options, Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=https://www.facebook.com/ToppersTT/>Toppers' Website</a>">Topper's Restaurant & Bar</option>
+
+      <option value="<b>The Waterfront Restaurant and Terrace</b><br><br><b>Location:</b> Port of Spain<br><b>Our Rating:</b> <b> &#11088;&#11088;&#11088;&#11088;</b><br><b>Price Range:</b> $$$-$$$$<br><b>Cuisines:</b> Caribbean, International, Grill<br><b>Special Diets:</b> Vegetarian Friendly, Vegan Options, Gluten Free Options<br><b>Accessibility:</b> Wheelchair accessibility<br><b>Cleanliness:</b> Very clean<br><br><b>Full Review:</b> This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.<br><b>COVID-19 Precautions: </b><br>&#x2713 Face masks required for staff in public areas<br>&#x2713 Hand sanitizer available to guests & staff<br>&#x2713 Staff required to regularly wash hands<br>&#x2713 Single-use/Individually wrapped condiments<br>&#x2713 Contactless ordering<br><br><a href=https://www.hyatt.com/en-US/hotel/trinidad-tobago/hyatt-regency-trinidad/trirt/dining/waterfront>The Waterfront Restaurant and Terrace's Website</a>">The Waterfront Restaurant and Terrace</option>
+
+    </select>
+  </form>
+
+  <button type="button" onclick="myFunction()">Enter</button>
+
+  <p id="result">
+</div>
+	
+</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("result").innerHTML = x;
+}
+</script>
+
+</body>
+
+</html>
